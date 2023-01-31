@@ -1,26 +1,27 @@
 #include "sampleCmd.h"
-#include <maya/MFnPlugin.h>
+// #include <maya/MFnPlugin.h>
+#include <maya/MGlobal.h>
 
-/*const MString SampleCmd::kName("sampleCmd")
+// const MString sampleCmd::kName("sampleCmd");
 
-    void *SampleCmd::creator()
+void *sampleCmd::creator()
 {
-    return new SampleCmd;
+    return new sampleCmd;
 }
 
-bool SampleCmd::isUndoable() const
+bool sampleCmd::isUndoable() const
 {
     return false;
 }
 
-MStatus SampleCmd::doIt(const MArgList &args)
+MStatus sampleCmd::doIt(const MArgList &args)
 {
     MStatus status;
     MGlobal::displayInfo("Good job");
     return MS::kSuccess;
-}*/
+}
 
-void *sampleCmd::creator()
+/*void *sampleCmd::creator()
 {
     return new sampleCmd;
 }
@@ -45,4 +46,4 @@ MStatus uninitializePlugin(MObject obj)
     MStatus status = plugin.deregisterCommand("good job");
     CHECK_MSTATUS_AND_RETURN_IT(status);
     return status;
-}
+}*/

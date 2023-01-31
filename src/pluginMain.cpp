@@ -4,7 +4,7 @@
 
 MStatus initializePlugin(MObject obj)
 {
-    MFnPlugin plugin(obj, "lulu", "1.0", "any");
+    MFnPlugin plugin(obj, "Jeremiah Lee", "1.0", "Any");
     MStatus status = plugin.registerCommand("good job", sampleCmd::creator);
     CHECK_MSTATUS_AND_RETURN_IT(status);
     return status;

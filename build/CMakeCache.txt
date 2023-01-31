@@ -222,9 +222,6 @@ MayaProjectName_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 MayaProjectName_SOURCE_DIR:STATIC=C:/Users/Jeremiah/test/maya_test_repository
 
-//The directory containing a CMake configuration file for Maya.
-Maya_DIR:PATH=Maya_DIR-NOTFOUND
-
 
 ########################
 # INTERNAL cache entries
