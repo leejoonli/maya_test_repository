@@ -1,0 +1,10 @@
+^C:\USERS\JEREMIAH\TEST\MAYA_TEST_REPOSITORY\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Jeremiah/test/maya_test_repository -BC:/Users/Jeremiah/test/maya_test_repository/build --check-stamp-file C:/Users/Jeremiah/test/maya_test_repository/build/src/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
